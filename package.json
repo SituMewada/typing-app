@@ -1,0 +1,19 @@
+{
+  "name": "typing-app",
+  "version": "1.0.0",
+  "description": "typing app",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SituMewada/typing-app.git"
+  },
+  "author": "Sitaram mewada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SituMewada/typing-app/issues"
+  },
+  "homepage": "https://github.com/SituMewada/typing-app#readme"
+}
