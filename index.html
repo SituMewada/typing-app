@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monkey</title>
+    <link  rel="icon" href="./dev-data/img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <header class="header">
+      <div class="logo-and-name">
+        <img src="./dev-data/img/Component 1.png" class="logo" alt="logo">
+        <div class="app-name">
+          <div class="upper-name">Typing app</div>
+          <div class="lower-name">Test yout typing speed</div>
+        </div> 
+      </div>
+    </header>
+    <div class="set-game-setting">
+       
+      <div class="set-game-time">
+        <div class="intial-Time" style="color:#FC626A;">15</div>
+        <div>30</div>
+        <div>60</div>
+        <div>120</div>
+      </div>
+    </div>
+    <div class="timre">
+      <div class="left_time">30</div>
+    </div>
+    <div id="game" tabindex="0" >
+      <div id="words"></div>
+      <div id="cursor"></div> 
+      <div id="focus-error">click here to focus</div>
+    </div>
+     
+    <div class="chart">
+      <div class="result-data">
+
+        <div class="WPM"><span>wpm</span><br> <span class="wpm_speed">0</span></div>
+        <div class="accuracy"><span>acc</span><br> <span class="acc">100%</span></div>
+      </div>
+      <div class="chart_graph">
+
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <div class="button_reset">
+      <div class="reset"><iconify-icon icon="ic:sharp-refresh" width="35" height="35"></iconify-icon></div>
+    </div>
+    <div class="github">
+      <a href="https://github.com/SituMewada" target="_blank">
+        <iconify-icon icon="bi:github" style="color: white;" width="40"></iconify-icon>
+      </a>
+       
+    </div>
+</body>
+</html>
