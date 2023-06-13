@@ -60,6 +60,11 @@ setGameTime.addEventListener('click',(e)=>{
     // console.log(e.target)
     e.target.style.color='#FC626A';
     gameTime=Number(e.target.textContent);
+    //for the chart seconds
+    seconds=[];
+    for(let i=1;i<=gameTime;i++){
+        seconds.push(i);
+    }
     remainTime.textContent=gameTime;
 })
  
