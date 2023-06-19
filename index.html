@@ -2,17 +2,17 @@
 <html>
 <head>
     <title>Monkey</title>
-    <link  rel="icon" href="./dev-data/img/favicon.png">
+    <link  rel="icon" href="./public/img/favicon.png">
     <link rel="stylesheet" href="./style.css">
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script defer src="./script.js"></script>
+    <script defer type="module" src="./script.js"></script>
 </head>
 <body>
     <header class="header">
       <div class="logo-and-name">
-        <img src="./dev-data/img/Component 1.png" class="logo" alt="logo">
+        <img src="./public/img/Component 1.png" class="logo" alt="logo">
         <div class="app-name">
           <div class="upper-name">Typing app</div>
           <div class="lower-name">Test yout typing speed</div>
@@ -20,16 +20,39 @@
       </div>
     </header>
     <div class="set-game-setting">
-       
-      <div class="set-game-time">
-        <div class="intial-Time" style="color:#FC626A;">15</div>
-        <div>30</div>
-        <div>60</div>
-        <div>120</div>
+      <div class="game-setting">
+        <div class="set-game-para">
+          <div class="set-time" style="color: #FC626A;">time</div>
+          <div class="words-number">words</div>
+          <div class="quote">quote</div>
+        </div> 
+        <div class="divider"  ></div>
+        <div class="set-game-time">
+          <div class="intial-Time" style="color:#FC626A;">15</div>
+          <div>30</div>
+          <div>60</div>
+          <div>120</div>
+        </div>
+        <div class="set-game-word">
+          <div class="intial-word-num" style="color:#FC626A;">10</div>
+          <div>25</div>
+          <div>50</div>
+          <div>100</div>
+        </div>
+        <div class="set-game-quotes">
+          <div class="intial-quote-lenght" style="color:#FC626A;">small</div>
+          <div>medium</div>
+          <div>long</div>
+          
+        </div>
+        
       </div>
+       
+       
     </div>
     <div class="timre">
-      <div class="left_time">30</div>
+      <div class="left_time"><span>30</span></div>
+      <div class="word-count"><spna class="current-typed-words">0</spna>/<span class="total-words">10</span></div>
     </div>
     <div id="game" tabindex="0" >
       <div id="words"></div>
@@ -53,7 +76,7 @@
     </div>
     <div class="github">
       <a href="https://github.com/SituMewada" target="_blank">
-        <iconify-icon icon="bi:github" style="color: white;" width="40"></iconify-icon>
+        <iconify-icon icon="bi:github" style="color: white;" width="35"></iconify-icon>
       </a>
        
     </div>
