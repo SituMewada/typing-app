@@ -63,7 +63,7 @@ const newGame=function(numberOfwords){
     remainTime.innerHTML=gameTime+'';
     inputField.innerHTML='';
     
-    for(let i=1;i<numberOfwords;i++){
+    for(let i=1;i<=numberOfwords+1;i++){
         let el=word[Math.round(Math.random()*((word.length)-5))];
         inputField.innerHTML+=`<div class='word'><span class="letter">${el.split('').join('</span><span class="letter">')}</span></div>`;
     }
