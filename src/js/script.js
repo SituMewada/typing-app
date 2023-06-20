@@ -35,7 +35,7 @@ let intialTime=document.querySelector('.intial-Time');
 
 let wpm_Data=[];
 let seconds=[];
-let numOfwords=1;
+let numOfwords=10;
 let currentWordTyped=0;
 
 let timeStart=true;
@@ -62,9 +62,9 @@ const newGame=function(numberOfwords){
     }
     remainTime.innerHTML=gameTime+'';
     inputField.innerHTML='';
-
+    
     for(let i=1;i<numberOfwords;i++){
-        let el=word[Math.round(Math.random()*word.length-1)];
+        let el=word[Math.round(Math.random()*((word.length)-5))];
         inputField.innerHTML+=`<div class='word'><span class="letter">${el.split('').join('</span><span class="letter">')}</span></div>`;
     }
     // word.forEach(el=>{
