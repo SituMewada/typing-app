@@ -69,7 +69,7 @@ body{
     justify-content: center; 
     font-family: 'Roboto Mono', monospace;   
 }
-.set-game-setting div{ 
+.game-setting{ 
     color: #f2f2f2;
     display: flex;
     justify-content: center;
@@ -79,12 +79,50 @@ body{
     font-size: small;
     border-radius: 8px;
 }
+.set-game-para{
+    display: flex;
+
+}
+.set-game-para div{
+    justify-content: center;
+    column-gap: 30px;
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+    font-size: small;
+}
+.set-game-time{
+    display: flex;
+}
+.set-game-word{
+    display: none;
+}
+.set-game-time div, .set-game-word div, .set-game-quotes div{
+    justify-content: center;
+    column-gap: 30px;
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+    font-size: small;
+}
+.set-game-quotes{
+    display: none;
+}
+
 .timre{
     margin-left: 90px;
     margin-right: 90px;
-    color: #FC626A;
+    color: #ffff;
     font-size: 25px;
     font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+.word-count{
+    display: none;
+}
+.divider{
+    background-color: #535353;
+    width: 3px;
+    height: 20px;
+    border-radius: 5px;
 }
 #game{
      
@@ -227,11 +265,9 @@ reset:active{
     font-size: 30px;
 }
 .github{
-    margin: 35px;
-    width: 50px;
-    height: 50px;
+    margin-left: 90px;
    position: absolute; 
-   left: -10px;
-   bottom: -20px;
+   bottom: 15px;
+   
 }
  
