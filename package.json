@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "random-words": "^2.0.0"
-  }
+  },
+  "type": "module",
+  "name": "typing-app",
+  "version": "1.0.0",
+  "description": "test your typing speed",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SituMewada/typing-app.git"
+  },
+  "author": "Sitaram Mewada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SituMewada/typing-app/issues"
+  },
+  "homepage": "https://github.com/SituMewada/typing-app#readme"
 }

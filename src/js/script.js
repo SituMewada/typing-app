@@ -1,5 +1,7 @@
  
-const word="The journey, which I remember well, was very pleasant. I made friends with many people on the train. One lady gave me a box of shells. My father made holes in these so that I could string them, and for a long time they kept me happy and contented. The conductor, too, was kind.".split(' ');
+import { word }  from "./randomword.js";
+
+// const word="The journey, which I remember well, was very pleasant. I made friends with many people on the train. One lady gave me a box of shells. My father made holes in these so that I could string them, and for a long time they kept me happy and contented. The conductor, too, was kind.".split(' ');
 
  
 const inputField=document.querySelector('#words');
@@ -62,7 +64,7 @@ const newGame=function(numberOfwords){
     inputField.innerHTML='';
 
     for(let i=1;i<numberOfwords;i++){
-        let el=word[Math.round(Math.random()*20)];
+        let el=word[Math.round(Math.random()*word.length-1)];
         inputField.innerHTML+=`<div class='word'><span class="letter">${el.split('').join('</span><span class="letter">')}</span></div>`;
     }
     // word.forEach(el=>{
